@@ -1,0 +1,47 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+   background: url("img/fundo-madeira.jpg") no-repeat top center ; /* deixa a imagem posicionada da maneira correta*/
+   }
+   
+   section#iphone{
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+    width: 311px;
+    height: 620px;
+    background-image: url("img/frame-iphone.png");
+}
+iframe{
+    position: absolute;
+    top: 13%;
+    left: 7.5%;
+    width: 265px;
+    height: 470px;
+    background-size: cover;
+}
+/*::-webkit-scrollbar{
+    width: 0%;
+    height: 0%;
+}                          esconde a barra de rolagem*/
+section#icones{
+    text-align: right;
+}
+section#icones img{/*img é elemento filho(todos os img dentro do parametro sao alterados)*/
+   border-radius: 50%;
+    width: 50px;
+    margin: 10px;
+    box-sizing: border-box;/*borda faz parte do elemento*/
+
+}
+section#icones img:hover{
+    border: 2px solid white;
+    width: 58px;
+    transition: 0.3s;/*tempo para execuão*/
+
+}
